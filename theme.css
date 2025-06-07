@@ -6,6 +6,10 @@
 }
 */
 
+* {
+  font-family: "OCR A", sans-serif;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -21,31 +25,6 @@
     --wave-color-opacity-contrast-fill-ultra-thin: #fffafa1a !important;
     --wave-color-solid-rainbow-yellow-darkest: #fffafa1a !important;
     --wave-color-solid-accent-dark: rgb(128, 128, 128);
-}
-
-/* Credits to https://github.com/surfbryce for the fonts */
-@font-face {
-    font-family: "AbyssFont";
-    font-weight: 400;
-    src: url("https://excel.lexploits.top/extra/tidal/LyricsRegular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "AbyssFont";
-    font-weight: 500;
-    src: url("https://excel.lexploits.top/extra/tidal/LyricsMedium.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "AbyssFont";
-    font-weight: 600;
-    src: url("https://excel.lexploits.top/extra/tidal/LyricsSemibold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "AbyssFont";
-    font-weight: 700;
-    src: url("https://excel.lexploits.top/extra/tidal/LyricsBold.woff2") format("woff2");
 }
 
 ._title_a453dad._smallText_4db05d0 {
