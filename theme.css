@@ -52,18 +52,19 @@
     opacity: 1;
 }
 
+[data-test="main-layout-header"],
+[data-test="feed-sidebar"],
+[data-test="stream-metadata"],
+[data-test="footer-player"] {
+    background-color: rgba(25, 25, 25, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid #fffafa1a !important;
+}
+
 [data-test="main-layout-header"] {
     border-left: 0 !important;
 }
 
-#playQueueSidebar {
-    top: 50px !important;
-    border: 1px solid #fffafa1a;
-    margin: 2px;
-    margin-right: -14px !important;
-    background-color: rgba(25, 25, 25, 0.8) !important;
-    backdrop-filter: blur(10px);
-}
 
 [class^="_bottomGradient"] {
     visibility: hidden;
