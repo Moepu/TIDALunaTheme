@@ -40,18 +40,6 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-[data-test="navigation-arrows"]>button {
-    color: white;
-    background-color: rgb(50, 50, 50) !important;
-    backdrop-filter: blur(10px);
-    border-radius: 4px;
-}
-
-[data-test="navigation-arrows"]>button:disabled {
-    background-color: rgb(40, 40, 40) !important;
-    opacity: 1;
-}
-
 [data-test="main-layout-header"],
 [data-test="feed-sidebar"],
 [data-test="stream-metadata"],
@@ -61,10 +49,14 @@
     border: 1px solid #fffafa1a !important;
 }
 
-[data-test="main-layout-header"] {
-    border-left: 0 !important;
+#playQueueSidebar {
+    top: 50px !important;
+    border: 1px solid #fffafa1a;
+    margin: 2px;
+    margin-right: -14px !important;
+    background-color: rgba(25, 25, 25, 0.8) !important;
+    backdrop-filter: blur(10px);
 }
-
 
 [class^="_bottomGradient"] {
     visibility: hidden;
