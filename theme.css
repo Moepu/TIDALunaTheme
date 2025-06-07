@@ -164,9 +164,11 @@ html,button,input,select,textarea,small {
     width: calc(100% - 20px);
     bottom: 10px;
     left: 10px;
-    border: 1px solid var(--wave-color-solid-base-fill);
     border-radius: 4px !important;
     position: absolute !important;
+    background-color: rgba(25, 25, 25, 0.2) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
 }
 
 [class^="_tooltipContainer"]>button {
@@ -237,8 +239,7 @@ button[data-test="close-now-playing"]:hover {
 }
 
 [data-test="feed-sidebar"],
-[data-test="stream-metadata"],
-[data-test="footer-player"] {
+[data-test="stream-metadata"] {
     background-color: rgba(25, 25, 25, 0.8) !important;
     backdrop-filter: blur(10px);
     border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
