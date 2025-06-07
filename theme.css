@@ -42,6 +42,29 @@ small {
     visibility: hidden;
 }
 
+/* === Searchbar === */
+._clearSearchButton_c7c536a {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: inherit;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 24px
+}
+
+div._searchField_b2eb7f7:focus-within {
+    border: 1px solid transparent
+}
+
+div._searchField_b2eb7f7:focus-within input {
+    color: rgb(50,50,50,0.1);
+}
+
 /* === Profile and Header Adjustments === */
 ._user_c8890f8 {
     align-items: center;
@@ -182,7 +205,7 @@ small {
     border-radius: 4px !important;
     position: absolute !important;
     background-color: rgba(25, 25, 25, 0.2) !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
 }
 
