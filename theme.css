@@ -70,9 +70,9 @@ html,button,input,select,textarea,small {
     letter-spacing: .96px;
     line-height: 12px;
     text-transform: uppercase;
-    leading-trim: both;
-    text-edge: cap
-} /* Quality Text */
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: "Segoe UI", sans-serif;
+} /* Quality Format */
 
 [class^="followingButton"],
 [title="Unfollow"],
