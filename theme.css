@@ -18,3 +18,12 @@
     border-radius: 4px !important;
     position: absolute !important;
 }
+
+[data-test="contextmenu"] {
+    border: 1px solid #fffafa1a !important;
+}
+
+[class^="_dataContainer_"]::before {
+    background-image: var(--img);
+    filter: blur(10px) brightness(0.4);
+}
