@@ -68,17 +68,13 @@ div._searchField_b2eb7f7:focus-within {
     height: 10px;
 }
 
-._pageHeader_1d2b3ad {
-    /* Already set to hidden above */
-}
-
-/* === Recently Played and Sidebar Items === */
+/* === Recently Played === */
 ._shortcutItem_6c8e7b4 {
     align-items: center;
     background-color: rgba(50, 50, 50, 0.2);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 16px 32px #0000004d;
     container-type: inline-size;
     display: flex;
@@ -111,14 +107,11 @@ div._searchField_b2eb7f7:focus-within {
     color: black;
 }
 
-/* === Follow/Unfollow Buttons === */
-[class^="followingButton"],
-[title="Unfollow"],
-[title="Follow"],
-[title="Unfollow"] > span,
-[title="Follow"] > span {
-    background-color: var(--wave-color-solid-rainbow-yellow-fill) !important;
-    color: var(--wave-color-solid-base-brighter);
+/* === Bell === */
+button._feedBell_95247e3 {
+    background-color: transparent;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin);
+    position: relative
 }
 
 /* === Sidebar and Navigation === */
@@ -166,14 +159,6 @@ div._searchField_b2eb7f7:focus-within {
     border-radius: 4px;
     display: grid;
     place-items: center;
-}
-
-/* === Disable Audio Devices === */
-:is(._player_1d16b04 button).withBackground[aria-checked=true] {
-    background-color: #fcfcfc29;
-    border-radius: 10px;
-    opacity: 1;
-    display: none;
 }
 
 /* === Imagery and Borders === */
