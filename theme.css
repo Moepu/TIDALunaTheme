@@ -1,0 +1,20 @@
+/*
+{
+    "name": "TIDAL Custom Theme",
+    "author": "@moepu",
+    "description": "Cloner!"
+}
+*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+[data-test="footer-player"] {
+    width: calc(100% - 20px);
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid rgb(25, 25, 25);
+    border-radius: 4px !important;
+    position: absolute !important;
+}
