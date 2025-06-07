@@ -10,6 +10,19 @@
     display: none;
 }
 
+:root {
+    --wave-color-solid-accent-fill: white;
+    --wave-color-solid-rainbow-yellow-fill: white;
+    --wave-color-solid-contrast-fill: white;
+    --wave-color-solid-base-fill: rgb(25, 25, 25);
+    --wave-color-solid-base-brighter: var(--wave-color-solid-base-fill);
+    --wave-text-body-medium: white !important;
+    --track-vibrant-color: white !important;
+    --wave-color-opacity-contrast-fill-ultra-thin: #fffafa1a !important;
+    --wave-color-solid-rainbow-yellow-darkest: #fffafa1a !important;
+    --wave-color-solid-accent-dark: rgb(128, 128, 128);
+}
+
 [data-test="footer-player"] {
     width: calc(100% - 20px);
     bottom: 10px;
@@ -41,7 +54,7 @@
 [data-test="footer-player"] {
     background-color: rgba(25, 25, 25, 0.8) !important;
     backdrop-filter: blur(10px);
-    border: 1px solid #fffafa1a !important;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
 }
 
 [data-test="main-layout-header"] {
@@ -50,7 +63,7 @@
 
 #playQueueSidebar {
     top: 50px !important;
-    border: 1px solid #fffafa1a;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin);
     margin: 2px;
     margin-right: -14px !important;
     background-color: rgba(25, 25, 25, 0.8) !important;
@@ -61,6 +74,15 @@
     visibility: hidden;
 }
 
+[data-test="settings-page"] {
+    padding-bottom: 60px !important;
+}
+
 [data-test="contextmenu"] {
-    border: 1px solid #fffafa1a !important;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
+}
+
+[class^="_dataContainer_"]::before {
+    background-image: var(--img);
+    filter: blur(10px) brightness(0.4);
 }
