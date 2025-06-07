@@ -57,19 +57,12 @@
     color: var(--wave-color-solid-base-brighter);
 }
 
-[class^="_wave-badge-color-max"] {
-    color: black !important;
-    background-color: #fffafa1a;
-    backdrop-filter: blur(10px);
-    border-radius: 3px;
-}
-
 [data-test="main-layout-sidebar-wrapper"] {
     border-right: var(--wave-color-opacity-contrast-fill-ultra-thin) 1px solid;
 }
 
 [class^="_wave-badge"] {
-    background-color: #fffafa1a;
+    background-color: rgb(255,255,255,0.05);
     backdrop-filter: blur(10px);
     border-radius: 4px;
     color: black;
