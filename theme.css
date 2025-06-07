@@ -43,26 +43,20 @@ small {
 }
 
 /* === Searchbar === */
-._clearSearchButton_c7c536a {
+._container_f1be359 {
     align-items: center;
-    border: 1px solid transparent;
-    border-radius: 40px;
-    color: inherit;
+    background-color: transparent;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin);
+    border-radius: 12px;
+    cursor: text;
     display: flex;
-    height: 24px;
-    justify-content: center;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 24px
+    position: relative;
+    transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out
 }
 
 div._searchField_b2eb7f7:focus-within {
-    border: 1px solid transparent
-}
-
-div._searchField_b2eb7f7:focus-within input {
-    color: rgb(50,50,50,0.1);
+    background-color: transparent;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-regular);
 }
 
 /* === Profile and Header Adjustments === */
@@ -174,6 +168,14 @@ div._searchField_b2eb7f7:focus-within input {
     place-items: center;
 }
 
+/* === Disable Audio Devices === */
+:is(._player_1d16b04 button).withBackground[aria-checked=true] {
+    background-color: #fcfcfc29;
+    border-radius: 10px;
+    opacity: 1;
+    display: none;
+}
+
 /* === Imagery and Borders === */
 [data-test="current-media-imagery"] {
     border: 0 !important;
@@ -260,11 +262,13 @@ button[data-test="close-now-playing"]:hover {
     background-color: rgba(100, 100, 100, 0.4) !important;
     backdrop-filter: blur(10px);
     border-radius: 4px;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-regular);
 }
 [data-test="navigation-arrows"] > button:disabled {
     background-color: rgba(250, 250, 250, 0.1) !important;
     backdrop-filter: blur(10px);
     opacity: 1;
+    border: 1px solid var(--wave-color-opacity-contrast-fill-regular);
 }
 
 /* === Main Layout and Headers === */
