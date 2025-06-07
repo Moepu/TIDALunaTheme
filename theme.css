@@ -64,6 +64,16 @@ html,button,input,select,textarea,small {
     visibility: hidden;
 } /* Disable Home Header */
 
+._wave-text-badge-bold_1jtlh_99 {
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: .96px;
+    line-height: 12px;
+    text-transform: uppercase;
+    leading-trim: both;
+    text-edge: cap
+} /* Quality Text */
+
 [class^="followingButton"],
 [title="Unfollow"],
 [title="Follow"],
