@@ -59,7 +59,8 @@
 
 [class^="_wave-badge-color-max"] {
     color: black !important;
-    background-color: var(--wave-color-solid-accent-fill);
+    background-color: #fffafa1a;
+    backdrop-filter: blur(10px);
     border-radius: 3px;
 }
 
@@ -68,7 +69,8 @@
 }
 
 [class^="_wave-badge"] {
-    background-color: var(--wave-color-solid-accent-fill);
+    background-color: #fffafa1a;
+    backdrop-filter: blur(10px);
     border-radius: 4px;
     color: black;
 }
@@ -207,7 +209,7 @@ button[data-test="close-now-playing"]:hover {
 }
 
 [data-test="navigation-arrows"]>button {
-    color: whreite;
+    color: white;
     background-color: rgb(50, 50, 50) !important;
     backdrop-filter: blur(10px);
     border-radius: 4px;
