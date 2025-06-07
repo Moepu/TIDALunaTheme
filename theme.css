@@ -1,13 +1,13 @@
 /*
 {
-    "name": "Dark",
+    "name": "Dark Abysso",
     "author": "@moepu",
     "description": "Spicetify Clone whatsoever..."
 }
 */
 
 html,button,input,select,textarea,small {
-    font-family: "OCR A",sans-serif;
+    font-family: "OCR A", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +29,16 @@ html,button,input,select,textarea,small {
 
 ._title_a453dad._smallText_4db05d0 {
     visibility: hidden;
-}
+} /* Hide Title Bar */
+
+._user_c8890f8 {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height: 10px;
+    visibility: hidden;
+} /* Disable Profile */
 
 ._shortcutItem_6c8e7b4 {
     align-items: center;
@@ -49,11 +58,11 @@ html,button,input,select,textarea,small {
     position: relative;
     text-align: start;
     z-index: 2
-}
+} /* Fix Recently Played Visibility */
 
 ._pageHeader_1d2b3ad { 
     visibility: hidden;
-}
+} /* Disable Home Header */
 
 [class^="followingButton"],
 [title="Unfollow"],
@@ -210,13 +219,13 @@ button[data-test="close-now-playing"]:hover {
 
 [data-test="navigation-arrows"]>button {
     color: white;
-    background-color: rgb(50, 50, 50, 0.4) !important;
+    background-color: rgb(150,150,150, 0.4) !important;
     backdrop-filter: blur(10px);
     border-radius: 4px;
 }
 
 [data-test="navigation-arrows"]>button:disabled {
-    background-color: rgb(40, 40, 40,) !important;
+    background-color: rgb(250,250,250, 0.1) !important;
     backdrop-filter: blur(10px);
     opacity: 1;
 }
