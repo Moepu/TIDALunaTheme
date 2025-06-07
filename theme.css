@@ -48,6 +48,30 @@
     src: url("https://excel.lexploits.top/extra/tidal/LyricsBold.woff2") format("woff2");
 }
 
+._title_a453dad._smallText_4db05d0 {
+    visibility: hidden;
+}
+
+._shortcutItem_6c8e7b4 {
+    align-items: center;
+    background-color: rgb(50,50,50,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255,255,255,0.05) !important;
+    border-radius: 4px;
+    box-shadow: 0 16px 32px #0000004d;
+    container-type: inline-size;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 600;
+    gap: var(--wave-spacing--regular);
+    height: 88px;
+    justify-content: space-between;
+    padding: 0 var(--wave-spacing--extra-small) 0 var(--wave-spacing--regular);
+    position: relative;
+    text-align: start;
+    z-index: 2
+}
+
 [class^="followingButton"],
 [title="Unfollow"],
 [title="Follow"],
@@ -276,7 +300,6 @@ button[data-test="close-now-playing"]:hover {
 }
 
 [data-test="query-suggestions"],
-[data-test="shortcut-list"],
 [data-test="recent-searches-container"] {
     background-color: rgba(25, 25, 25, 0.8) !important;
     backdrop-filter: blur(10px);
