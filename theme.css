@@ -72,6 +72,10 @@
     z-index: 2
 }
 
+._pageHeader_1d2b3ad { 
+    visibility: hidden;
+}
+
 [class^="followingButton"],
 [title="Unfollow"],
 [title="Follow"],
@@ -227,17 +231,23 @@ button[data-test="close-now-playing"]:hover {
 
 [data-test="navigation-arrows"]>button {
     color: white;
-    background-color: rgb(50, 50, 50) !important;
+    background-color: rgb(50, 50, 50, 0.4) !important;
     backdrop-filter: blur(10px);
     border-radius: 4px;
 }
 
 [data-test="navigation-arrows"]>button:disabled {
-    background-color: rgb(40, 40, 40) !important;
+    background-color: rgb(40, 40, 40, 0.4) !important;
+    backdrop-filter: blur(10px);
     opacity: 1;
 }
 
-[data-test="main-layout-header"],
+[data-test="main-layout-header"] {
+    background-color: rgba(25, 25, 25, 0) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--wave-color-opacity-contrast-fill-ultra-thin) !important;
+}
+
 [data-test="feed-sidebar"],
 [data-test="stream-metadata"],
 [data-test="footer-player"] {
