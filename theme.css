@@ -40,6 +40,47 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+[class^="ReactVirtualized__Grid"] {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+[data-test="media-table"]>div>div>div {
+    border: 1px solid #fffafa1a !important;
+}
+
+[class^="ReactVirtualized__Grid__innerScrollContainer"] {
+    border: none;
+    margin: 5px;
+}
+
+[class^="_tableRow"]:hover>*,
+[data-test-is-playing="true"]>* {
+    color: white !important;
+}
+
+[class^="_tableRow"]>*,
+[data-test-is-playing="false"]>* {
+    color: lightgray !important;
+}
+
+[class*="coverColumn"] {
+    padding-left: 5px !important;
+}
+
+[data-test="navigation-arrows"]>button {
+    color: white;
+    background-color: rgb(50, 50, 50) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+}
+
+[data-test="navigation-arrows"]>button:disabled {
+    background-color: rgb(40, 40, 40) !important;
+    opacity: 1;
+}
+
 [data-test="main-layout-header"],
 [data-test="feed-sidebar"],
 [data-test="stream-metadata"],
@@ -47,6 +88,10 @@
     background-color: rgba(25, 25, 25, 0.8) !important;
     backdrop-filter: blur(10px);
     border: 1px solid #fffafa1a !important;
+}
+
+[data-test="main-layout-header"] {
+    border-left: 0 !important;
 }
 
 #playQueueSidebar {
@@ -68,4 +113,9 @@
 
 [data-test="contextmenu"] {
     border: 1px solid #fffafa1a !important;
+}
+
+[class^="_dataContainer_"]::before {
+    background-image: var(--img);
+    filter: blur(10px) brightness(0.4);
 }
