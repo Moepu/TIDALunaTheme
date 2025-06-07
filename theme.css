@@ -281,6 +281,7 @@ button[data-test="close-now-playing"]:hover {
 }
 
 [data-test="query-suggestions"],
+[data-test="shortcut-list"],
 [data-test="recent-searches-container"] {
     background-color: rgba(25, 25, 25, 0.6);
     backdrop-filter: blur(10px);
@@ -292,10 +293,5 @@ button[data-test="close-now-playing"]:hover {
 
 [class^="_dataContainer_"]::before {
     background-image: var(--img);
-    filter: blur(10px) brightness(0.4);
-}
-
-[class^="_shortcutItem_"]::before {
-    background-color: rgba(25, 25, 25, 0.6);
     filter: blur(10px) brightness(0.4);
 }
