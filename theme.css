@@ -286,9 +286,7 @@ button[data-test="close-now-playing"]:hover {
 
 /* Header player controls */
 [data-test="play-all"]>div>*,
-[data-test="shuffle-all"]>div>*,
-[data-test="play-all"],
-[data-test="shuffle-all"] {
+[data-test="shuffle-all"]>div>* {
     color: var(--wave-color-solid-accent-fill) !important;
     background-color: transparent !important;
 }
