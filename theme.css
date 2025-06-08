@@ -308,7 +308,9 @@ button[data-test="close-now-playing"]:hover {
 [data-test="play-all"],
 [data-test="shuffle-all"] {
   color: var(--color-primary) !important;
-  background-color: transparent !important;
+  background-color: rgb(50,50,50,0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 12px;
 }
 
 /* Page top margin */
@@ -372,16 +374,16 @@ button[data-test="close-now-playing"]:hover {
 
 /* Sub-menu style */
 ._contextMenu_8606b2d,._subMenu_706d970 {
-    background-color: rgb(50,50,50,0.8);
+    background-color: rgb(50,50,50,0.8) !important;
     overflow-y: inherit;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) !important;
     border: 1px solid var(--border-light) !important;
 }
 
 /* Create new playlist button */
 a._createNewPlaylist_7fe1ffe:hover {
-  background-color: rgb(50,50,50,0.5);
-  backdrop-filter: blur(10px);
+  background-color: rgb(50,50,50,0.5) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 /* Data container background image */
