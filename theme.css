@@ -107,6 +107,15 @@ html, button, input, select, textarea, small {
   border-right: var(--border-light) 1px solid;
 }
 
+/* Player controls alignment */
+._smallButtons_e09964e {
+    align-items: flex-end;
+    display: flex;
+    gap: var(--wave-spacing--extra-small);
+    height: 54px;
+    justify-content: flex-end;
+}
+
 /* Badge style */
 [class^="_wave-badge"] {
   background-color: rgba(255,255,255,0.05);
