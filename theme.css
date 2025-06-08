@@ -98,6 +98,10 @@ html, button, input, select, textarea, small {
   color: var(--color-background-alt);
 }
 
+[class^="_buttons"] > button > span {
+    color: white !important;
+}
+
 /* Sidebar border */
 [data-test="main-layout-sidebar-wrapper"] {
   border-right: var(--border-light) 1px solid;
