@@ -63,6 +63,8 @@ html, button, input, select, textarea, small {
   visibility: hidden;
 }
 
+/* Context Menu */
+
 /* Badge text style */
 ._wave-text-badge-bold_1jtlh_99 {
   font-weight: 700;
@@ -262,7 +264,7 @@ button[data-test="close-now-playing"]:hover {
 /* Navigation arrows */
 [data-test="navigation-arrows"] > button {
   color: white;
-  background-color: rgba(100, 100, 100, 0.4) !important;
+  background-color: rgba(250, 250, 250, 0.4) !important;
   backdrop-filter: blur(10px);
   border-radius: 4px;
 }
@@ -363,6 +365,14 @@ button[data-test="close-now-playing"]:hover {
 /* Context menu border */
 [data-test="contextmenu"] {
   border: 1px solid var(--border-light) !important;
+  background-color: rgb(50,50,50,0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* Create new playlist button */
+a._createNewPlaylist_7fe1ffe:hover {
+  background-color: rgb(50,50,50,0.5);
+  backdrop-filter: blur(10px);
 }
 
 /* Data container background image */
