@@ -271,6 +271,15 @@ button[data-test="close-now-playing"]:hover {
   background-color: lightgray !important;
 }
 
+/* Header player controls */
+[data-test="play-all"]>div>*,
+[data-test="shuffle-all"]>div>*,
+[data-test="play-all"],
+[data-test="shuffle-all"] {
+    color: var(--wave-color-solid-accent-fill) !important;
+    background-color: transparent !important;
+}
+
 /* Switch style */
 .neptune-switch-checkbox:checked + .neptune-switch {
   background-color: rgba(255, 255, 255, 0.1);
@@ -314,9 +323,16 @@ button[data-test="close-now-playing"]:hover {
   color: var(--color-primary);
 }
 
-/* Small header margin */
+/* Small header */
 [class^="_smallHeader"] {
   margin-top: 7.5px;
+}
+
+[class^="_smallHeader"]::before {
+  --img: none;
+  background-color: color-mix(in srgb, rgb(50, 50, 50, 0.4), transparent 20%) !important;
+  filter: none !important;
+  backdrop-filter: blur(10px);
 }
 
 /* Page top margin */
