@@ -74,6 +74,20 @@ html, button, input, select, textarea, small {
   font-family: "Segoe UI", sans-serif;
 }
 
+/* Search results */
+._container_711d272 {
+    --topSpacing: calc(var(--headerHeight) + 30px);
+    background-color: transparent !important;
+}
+
+._container_711d272:before {
+    background-color: transparent !important;
+}
+
+._divider_8d359fc {
+    background-color: rgb(255,255,255,0.1);
+}
+
 /* Follow/unfollow button style */
 [class^="followingButton"],
 [title="Unfollow"],
