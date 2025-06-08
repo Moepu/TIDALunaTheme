@@ -139,6 +139,38 @@ html, button, input, select, textarea, small {
   color: var(--color-text-main);
 }
 
+/* Lyrics Provider */
+._lyricsProvider_56c7fb5 {
+    font-size: 1rem;
+    padding: 2rem 0;
+    visibility: hidden;
+}
+
+._syncButton_671034a {
+    bottom: 60px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    right: 0px;
+    transition: .3s ease-in;
+    width: 40px;
+}
+
+._button_84b8ffe {
+    background-color: rgb(50, 50, 50, 0.4);
+    border-radius: 50%;
+    color: rgb(250, 250, 250, 0.8);
+    height: 40px;
+    padding: 8px;
+    transition: background-color .15s ease;
+    width: 40px;
+    backdrop-filter: blur(10px);
+}
+
+._button_84b8ffe:hover {
+    background-color: rgb(250,250,250,0.2)
+}
+
 /* Sidebar active item */
 [class^="_sidebarItem"] [class^="active"] > span {
   color: var(--color-text-muted) !important;
