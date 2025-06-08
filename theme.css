@@ -36,7 +36,7 @@ html, button, input, select, textarea, small {
 
 /* Hide title bar */
 ._title_a453dad._smallText_4db05d0 {
-  display: none;
+  visibility: hidden;
 }
 
 /* Hide user profile */
@@ -62,8 +62,6 @@ html, button, input, select, textarea, small {
 ._pageHeader_1d2b3ad {
   visibility: hidden;
 }
-
-/* Context Menu */
 
 /* Badge text style */
 ._wave-text-badge-bold_1jtlh_99 {
@@ -369,6 +367,15 @@ button[data-test="close-now-playing"]:hover {
   border: 1px solid var(--border-light) !important;
   background-color: rgb(50,50,50,0.5);
   backdrop-filter: blur(10px);
+  overflow: visible;
+}
+
+/* Sub-menu style */
+._contextMenu_8606b2d,._subMenu_706d970 {
+    background-color: rgb(50,50,50,0.8);
+    overflow-y: inherit;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-light) !important;
 }
 
 /* Create new playlist button */
