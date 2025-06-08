@@ -121,7 +121,7 @@ html, button, input, select, textarea, small {
   background-color: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
   border-radius: 4px;
-  color: black;
+  color: white;
 }
 
 /* Progress bar color */
@@ -168,7 +168,7 @@ html, button, input, select, textarea, small {
 
 /* Button text color */
 [class^="button"] > span {
-  color: black;
+  color: white;
 }
 
 /* Explicit badge color */
@@ -199,12 +199,12 @@ html, button, input, select, textarea, small {
 [class^="_headerButtons"] > button > span,
 [data-test="toggle-picture-in-picture"] {
   background-color: var(--color-primary) !important;
-  color: black;
+  color: white;
 }
 
 /* Button text color override */
 [class^="_buttons"] > button > span {
-  color: black !important;
+  color: white !important;
 }
 
 /* Remove button border */
@@ -232,7 +232,7 @@ html, button, input, select, textarea, small {
 /* Tooltip button style */
 [class^="_tooltipContainer"] > button {
   background-color: var(--color-primary);
-  color: black;
+  color: white;
 }
 
 /* Tooltip button hover */
@@ -280,7 +280,7 @@ button[data-test="play-all"]:hover,
 button[data-test="shuffle-all"]:hover,
 button[data-test="request-fullscreen"]:hover,
 button[data-test="close-now-playing"]:hover {
-  color: black;
+  color: white;
   background-color: lightgray !important;
 }
 
