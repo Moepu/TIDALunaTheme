@@ -256,12 +256,15 @@ button[data-test="request-fullscreen"],
 button[data-test="close-now-playing"],
 button[data-test="play-all"],
 button[data-test="shuffle-all"] {
-  color: black;
-  background-color: var(--color-primary);
+  color: var(--color-primary) !important;
+  background-color: rgb(50,50,50,0.4) !important;
+  backdrop-filter: blur(10px) !important;
   border-radius: 12px;
 }
 
 /* Player control hover */
+button[data-test="play-all"]:hover,
+button[data-test="shuffle-all"]:hover,
 button[data-test="request-fullscreen"]:hover,
 button[data-test="close-now-playing"]:hover {
   color: black;
@@ -314,17 +317,6 @@ button[data-test="close-now-playing"]:hover {
 /* Small header margin */
 [class^="_smallHeader"] {
   margin-top: 7.5px;
-}
-
-/* Play and shuffle button style */
-[data-test="play-all"] > div > *,
-[data-test="shuffle-all"] > div > *,
-[data-test="play-all"],
-[data-test="shuffle-all"] {
-  color: var(--color-primary) !important;
-  background-color: rgb(50,50,50,0.4) !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 12px;
 }
 
 /* Page top margin */
