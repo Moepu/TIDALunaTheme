@@ -297,10 +297,20 @@ html, button, input, select, textarea, small {
 }
 
 /* Player control buttons */
+button._button_94c5125 {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    transition: none;
+    background-color: rgb(50, 50, 50, 0.4) !important;
+}
+
 button[data-test="request-fullscreen"],
-button[data-test="close-now-playing"],
-button[data-test="play-all"],
-button[data-test="shuffle-all"] {
+button[data-test="close-now-playing"] {
   color: var(--color-primary) !important;
   background-color: rgb(50,50,50,0.4) !important;
   backdrop-filter: blur(10px) !important;
@@ -308,8 +318,7 @@ button[data-test="shuffle-all"] {
 }
 
 /* Player control hover */
-button[data-test="play-all"]:hover,
-button[data-test="shuffle-all"]:hover,
+button._button_94c5125:hover,
 button[data-test="request-fullscreen"]:hover,
 button[data-test="close-now-playing"]:hover {
   color: white;
@@ -317,9 +326,8 @@ button[data-test="close-now-playing"]:hover {
 }
 
 /* Header player controls */
-[data-test="play-all"]>div>*,
-[data-test="shuffle-all"]>div>* {
-    color: var(--wave-color-solid-accent-fill) !important;
+._smallButtons_bdfda3f>button {
+    width: 80px;
     background-color: transparent !important;
 }
 
