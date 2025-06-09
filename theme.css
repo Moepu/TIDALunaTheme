@@ -231,7 +231,7 @@ html, button, input, select, textarea, small {
 [class^="_headerButtons"] > button > span,
 [data-test="toggle-picture-in-picture"] {
   background-color: var(--color-primary) !important;
-  color: white;
+  color: black;
 }
 
 /* Button text color override */
@@ -247,6 +247,22 @@ html, button, input, select, textarea, small {
 /* Sidebar margin */
 [data-test="feed-sidebar"] {
   margin-top: 10px;
+}
+
+/* Playlist Buttons */
+button._button_94c5125 {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    transition: none;
+    color: var(--color-primary) !important;
+    background-color: rgb(50, 50, 50, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px;
 }
 
 /* Footer player style */
@@ -419,6 +435,13 @@ button[data-test="close-now-playing"]:hover {
 [class^="_bottomGradient"] {
   visibility: hidden;
 }
+
+/* Minimized Button Controls */
+._buttonStates_91bed47 {
+    padding: 0;
+    pointer-events: auto;
+    background-color: transparent !important;
+} 
 
 /* Settings page padding */
 [data-test="settings-page"] {
